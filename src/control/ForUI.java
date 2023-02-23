@@ -2,6 +2,6 @@ package control;
 
 import view.UI;
 
-public class ParaUI extends UI{
+public class ForUI extends UI {
 
 }

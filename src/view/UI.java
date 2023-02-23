@@ -36,17 +36,17 @@ public class UI extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(new GridLayout(0, 3, 0, 0));
 		
-		JLabel lblNewLabel = new JLabel("PUZZLE");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(10, 11, 414, 22);
-		contentPane.add(lblNewLabel);
+		JLabel lblMensaje = new JLabel("PUZZLE");
+		lblMensaje.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblMensaje.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMensaje.setBounds(10, 11, 414, 22);
+		contentPane.add(lblMensaje);
 		
 		//BOTONES
-		for(int y=0;y<botones.length;y++) {
-			for(int x=0;x<botones[0].length;x++) {
-				botones[y][x] = new MyButton(y,x);
-				panel.add(botones[y][x]);
+		for(int x=0;x<botones.length;x++) {
+			for(int y=0;y<botones[0].length;y++) {
+				botones[x][y] = new MyButton(x,y);
+				panel.add(botones[x][y]);
 				
 			}
 		}
